@@ -37,7 +37,6 @@
       width: 80vw;
       height: 45vw;
       overflow: hidden;
-
     }
 
     .slider-line {
@@ -47,14 +46,21 @@
       position: relative;
       left: 0;
       transition: all ease 600ms;
-
+      max-height: 100%;
     }
 
-    .slider-line img {
+    .image-wrapper {
       width: 100%;
-      object-fit: cover;
       min-width: 100%;
       max-width: 100%;
+      text-align: center;
+    }
+    .image-wrapper img {
+      position: relative;
+      width: 96%;
+      object-fit: cover;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     .tool-panel {
@@ -88,7 +94,7 @@
       outline: none;
     }
 
-    @media screen and (max-width: 812px) {
+    @media screen and (max-width: 823px) {
       .tool-panel {
         display: none;
       }
@@ -100,14 +106,31 @@
   <div class="container">
     <div class="slider">
       <div class="slider-line">
-        <img src="./img/1.jpg" alt="">
-        <img src="./img/2.jpg" alt="">
-        <img src="./img/3.jpg" alt="">
-        <img src="./img/4.jpg" alt="">
-        <img src="./img/5.jpg" alt="">
-        <img src="./img/6.png" alt="">
-        <img src="./img/7.jpg" alt="">
-        <img src="./img/8.jpg" alt="">
+        <div class="image-wrapper">
+          <img src="./img/1.jpg" alt="">
+        </div>
+        <div class="image-wrapper">
+          <img src="./img/2.jpg" alt="">
+        </div>
+        <div class="image-wrapper">
+          <img src="./img/3.jpg" alt="">
+        </div>
+        <div class="image-wrapper">
+          <img src="./img/4.jpg" alt="">
+        </div>
+        <div class="image-wrapper">
+          <img src="./img/5.jpg" alt="">
+        </div>
+        <div class="image-wrapper">
+          <img src="./img/6.png" alt="">
+        </div>
+        <div class="image-wrapper">
+          <img src="./img/7.jpg" alt="">
+        </div>
+        <div class="image-wrapper">
+          <img src="./img/8.jpg" alt="">
+        </div>
+
       </div>
     </div>
     <div class="tool-panel">
